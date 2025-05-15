@@ -1,0 +1,37 @@
+---
+title: "My First Quarto PDF"
+author: "Your Name"
+format: pdf
+---
+
+# Introduction
+
+In our study we replicate the left-right attentional bias. In addition, we also investigate the effect of different shapes and sizes of a stimuli and different background colors. We aim to find out whether the manipulation of these visual features lead to differences in the direction of the first eye movement (left vs. right) after a central fixation point. 
+
+Two images are shown always on the left and right side of the display. We assume 
+
+# Experimental Method
+
+
+
+
+# Analysis Method
+
+# Results
+
+# Discussion
+
+# Contribution Table
+## A List
+
+- Item one
+- Item two
+- Item three
+
+## A Math Equation
+
+The quadratic formula:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
