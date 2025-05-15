@@ -3,7 +3,7 @@
 
 **Course:** *Acquisition and analysis of eye-tracking data*
 
-**Semester:** *Summer semester 2023*
+**Semester:** *Summer semester 2025*
 
 ## Project Description
 > Please provide a short description of the main goals. 
