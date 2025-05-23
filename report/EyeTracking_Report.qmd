@@ -1,10 +1,38 @@
 ---
-title: "My First Quarto PDF"
-author: "Your Name"
-format: pdf
+title: "Attentional Spatial Bias"
+author: 
+    - name: Franziska Goll
+      affil: University of Stuttgart
+    - name: Jan-Luca Schmitt
+      affil: University of Stuttgart
+    - name: Alexander Aßenmacher
+      affil: University of Stuttgart
+    - name: Julian Schäfer
+      affil: University of Stuttgart
+    - name: Sven Gerber
+      affil: University of Stuttgart
+    - name: Madlen Bartsch
+      email: st166417@stud.uni-stuttgart.de
+      affil: University of Stuttgart
+
+    
+format: 
+    pdf:
+      format: jats
+      keep-tex: true
+      template-partials: 
+      - title.tex
+      include-in-header:
+        text: |
+          \usepackage[noblocks]{authblk}
+          \renewcommand*{\Authsep}{, }
+          \renewcommand*{\Authand}{, }
+          \renewcommand*{\Authands}{, }
+          \renewcommand\Affilfont{\small}
 ---
 
 # Introduction
+
 
 In our study we replicate the left-right attentional bias. In addition, we also investigate the effect of different shapes and sizes of a stimuli and different background colors. We aim to find out whether the manipulation of these visual features lead to differences in the direction of the first eye movement (left vs. right) after a central fixation point. 
 
@@ -21,7 +49,29 @@ Two images are shown always on the left and right side of the display. We assume
 
 # Discussion
 
+We randomized all conditions and the selection of images. The images we used are from the categories indoor, urban and nature. Within their categories and also across their categories they
+vary in brightness of their colors. Since we do not know which images are selected together for the first fixation experiment, we have a cofounding factor with the varying brightness. This cofounding variable can 
+indicate an influence of our independent variable size and shape even if there might not be any. Also the contrast in the images can play a significant role in the sense making of our data.  
+
+
 # Contribution Table
+
+| **Task**                                           | **Franziska** | **Alexander** | **Jan-Luca** | **Julian** | **Sven** | **Madlen** |
+|----------------------------------------------------|---------------|---------------|--------------|------------|----------|------------|
+| Background Literature                              |               |               |              |            |          |            |
+| Experiment Design                                  |               |               |              |            |          |            |
+| Stimulus Design                                    |               |               |              |            |          |            |
+| Piloting                                           |               |               |              |            |          |            |
+| Data Recording                                     |               |               |              |            |          |            |
+| Non-Final-Talk presenting (who talks)              |               |               |              |            |          |            |
+| Non-Final-Talk presenting (who prepares)           |               |               |              |            |          |            |
+| Final-Talk presenting (who talks)                  |               |               |              |            |          |            |
+| Final-Talk presenting (who prepares)               |               |               |              |            |          |            |
+| Data Analysis Scripts                              |               |               |              |            |          |            |
+| Report Writing                                     |               |               |              |            |          |            |
+| Report Lectorate                                   |               |               |              |            |          |            |
+
+
 ## A List
 
 - Item one

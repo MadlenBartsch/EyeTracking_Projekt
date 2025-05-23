@@ -1,0 +1,33 @@
+$if(title)$
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+
+\author{
+$for(by-author)$
+  \begin{minipage}[t]{0.28\textwidth}
+    \centering
+    $it.name.literal$\par
+    $if(it.metadata.affil)$
+    \textnormal\small{$it.metadata.affil$}\par
+    $endif$
+    $if(it.email)$\small\texttt{$it.email$}$endif$
+  \end{minipage}%
+  \hspace{0.05\textwidth} % small horizontal space between authors
+$endfor$
+}
+
+
+
+$if(by-affiliation)$
+$for(by-affiliation)$
+\affil[$it.id$]{$it.name$}
+$endfor$
+$endif$
+
+
+\date{$date$}
+
