@@ -9,7 +9,7 @@ import pandas as pd
 categories = ["nature", "indoor", "urban"]
 attributes = {
     "size": ["small", "big"],
-    "form": ["symmetric", "asymmetric"],
+    "form": ["symmetrical", "asymmetrical"],
     "background": ["dominant", "contrary"]
 }
 n_images_per_category = 15
