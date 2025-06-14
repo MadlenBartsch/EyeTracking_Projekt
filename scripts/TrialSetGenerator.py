@@ -21,7 +21,7 @@ random.seed(5534)
 
 # Bildnamen erzeugen
 def generate_image_list(n, category):
-    return [f"{category}_{i+1}" for i in range(n)]
+    return [f"{category}_{i+1:03d}" for i in range(n)]
 
 images_by_category = {cat: generate_image_list(n_images_per_category, cat) for cat in categories}
 
