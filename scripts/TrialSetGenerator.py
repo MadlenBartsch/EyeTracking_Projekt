@@ -69,8 +69,8 @@ def generate_all_trials(image_combos):
         used_as_comparison.add(comparison_img)
 
         trials.append({
-            "img_left": attr_img,
-            "img_right": comparison_img,
+            "img_left": attr_img + ".jpg",
+            "img_right": comparison_img + ".jpg",
             "attribute": attr,
             "value": val,
             "target_image": "img_left",
@@ -78,8 +78,8 @@ def generate_all_trials(image_combos):
         })
 
         trials.append({
-            "img_left": comparison_img,
-            "img_right": attr_img,
+            "img_left": comparison_img + ".jpg",
+            "img_right": attr_img + ".jpg",
             "attribute": attr,
             "value": val,
             "target_image": "img_right",
@@ -97,8 +97,8 @@ def generate_baseline_trials():
         for img1, img2 in img_pairs:
             target_pos = random.choice(["img_left", "img_right"])
             trials.append({
-                "img_left": img1,
-                "img_right": img2,
+                "img_left": img1 + ".jpg",
+                "img_right": img2 + ".jpg",
                 "attribute": "none",
                 "value": "none",
                 "target_image": target_pos,
@@ -106,8 +106,8 @@ def generate_baseline_trials():
             })
             target_pos = random.choice(["img_left", "img_right"])
             trials.append({
-                "img_left": img2,
-                "img_right": img1,
+                "img_left": img2 + ".jpg",
+                "img_right": img1 + ".jpg",
                 "attribute": "none",
                 "value": "none",
                 "target_image": target_pos,
