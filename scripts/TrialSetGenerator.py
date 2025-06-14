@@ -134,10 +134,12 @@ def generate_subject_lists_balanced():
         random.shuffle(subject_trials)
         filename = os.path.join(output_dir, f"subject_{i+1}.csv")
         with open(filename, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=["img_left", "img_right", "attribute", "value", "target_image", "cb_index"])
+            writer = csv.DictWriter(f, fieldnames=["trial_number", "img_left", "img_right", "attribute", "value", "target_image", "cb_index"])
             writer.writeheader()
-            for trial in subject_trials:
-                writer.writerow(trial)
+            for j, trial in enumerate(subject_trials, start=1):
+                trial_with_number = trial.copy()
+                trial_with_number["trial_number"] = j
+                writer.writerow(trial_with_number)
 
     return balanced_lists
 
