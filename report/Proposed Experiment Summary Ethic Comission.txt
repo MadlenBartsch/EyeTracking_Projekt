@@ -1,0 +1,12 @@
+Proposed Experiment Summary for Ethics Approval
+
+Our study investigates attentional spatial biases in a visual task involving image perception. The experimental design includes three different conditions for image manipulation:
+
+Background color of experiment canvas: dominant color vs. complementary color
+
+Image shape manipulation: symmetrical vs. asymmetrical
+
+Image size manipulation: small, medium, and large
+
+Participants will first read and agree to an informed consent form outlining the study’s purpose and procedures. Upon consent, they will be presented with a series of images under the above-mentioned conditions. The key variable of interest is the participant’s initial fixation, which will be recorded using eye-tracking technology to assess potential spatial attention biases.
+
