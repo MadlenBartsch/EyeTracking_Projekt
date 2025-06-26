@@ -1,74 +1,74 @@
-### [**Configuration**](http://SetAnalyzer.py)
+### **Configuration**
 
-* [Setzt einen Zufalls-Seed für Reproduzierbarkeit.](http://SetAnalyzer.py)
+* Setzt einen Zufalls-Seed für Reproduzierbarkeit.
 
-* [Definiert:](http://SetAnalyzer.py)
+* Definiert:
 
-  * [20 Probanden](http://SetAnalyzer.py)
+  * 20 Probanden
 
-  * [120 Trials pro Proband](http://SetAnalyzer.py)
+  * 120 Trials pro Proband
 
-  * [100 Bilder pro Kategorie (nature, urban, indoor)](http://SetAnalyzer.py)
+  * 100 Bilder pro Kategorie (nature, urban, indoor)
 
-  * [20 % der Trials sollen Baseline-Trials sein, der Rest manipuliert.](http://SetAnalyzer.py)
+  * 20 % der Trials sollen Baseline-Trials sein, der Rest manipuliert.
 
-* [Drei Manipulationstypen: size, form, background, jeweils mit zwei Ausprägungen.](http://SetAnalyzer.py)
+* Drei Manipulationstypen: size, form, background, jeweils mit zwei Ausprägungen.
 
-### [**Paarbildung**](http://SetAnalyzer.py)
+### **Paarbildung**
 
-* [Für jede Kategorie (nature, urban, indoor) werden 100 Bildnamen erzeugt (z. B. urban\_001.jpg).](http://SetAnalyzer.py)
+* Für jede Kategorie (nature, urban, indoor) werden 100 Bildnamen erzeugt (z. B. urban\_001.jpg).
 
-* [Es werden alle möglichen Bildpaare aus unterschiedlichen Kategorien gebildet](http://SetAnalyzer.py)
+* Es werden alle möglichen Bildpaare aus unterschiedlichen Kategorien gebildet
 
-* [Alle Paare werden zufällig durchgemischt.](http://SetAnalyzer.py)
+* Alle Paare werden zufällig durchgemischt.
 
-### [**Initialisierung**](http://SetAnalyzer.py)
+### **Initialisierung**
 
-* [Leere Trial-Listen pro Proband.](http://SetAnalyzer.py)
+* Leere Trial-Listen pro Proband.
 
-* [Für jeden Probanden wird gespeichert:](http://SetAnalyzer.py)
+* Für jeden Probanden wird gespeichert:
 
-  * [welche Bilder schon benutzt wurden,](http://SetAnalyzer.py)
+  * welche Bilder schon benutzt wurden,
 
-  * [wie viele Baselines und Manipulationen je Art/Ausprägung schon verwendet wurden.](http://SetAnalyzer.py)
+  * wie viele Baselines und Manipulationen je Art/Ausprägung schon verwendet wurden.
 
-### [**Zuweisung der Paare**](http://SetAnalyzer.py)
+### **Zuweisung der Paare**
 
-* [Für jedes Bildpaar:](http://SetAnalyzer.py)
+* Für jedes Bildpaar:
 
-  * [Es wird je ein Trial an zwei unterschiedliche Probanden vergeben:](http://SetAnalyzer.py)
+  * Es wird je ein Trial an zwei unterschiedliche Probanden vergeben:
 
-    * [einer bekommt das Paar als img\_left \= A, img\_right \= B (normal)](http://SetAnalyzer.py)
+    * einer bekommt das Paar als img\_left \= A, img\_right \= B (normal)
 
-    * [der andere als img\_left \= B, img\_right \= A (gespiegelt)](http://SetAnalyzer.py)
+    * der andere als img\_left \= B, img\_right \= A (gespiegelt)
 
-  * [Die Probanden werden dabei zyklisch paarweise durchlaufen (subject\_1 & subject\_2, subject\_3 & subject\_4).](http://SetAnalyzer.py)
+  * Die Probanden werden dabei zyklisch paarweise durchlaufen (subject\_1 & subject\_2, subject\_3 & subject\_4).
 
-### [**Trial-Erstellung**](http://SetAnalyzer.py)
+### **Trial-Erstellung**
 
-[Für jeden Probanden (normal und gespiegelt):](http://SetAnalyzer.py)
+Für jeden Probanden (normal und gespiegelt):
 
-* [Wenn noch Baseline-Trials fehlen:](http://SetAnalyzer.py)
+* Wenn noch Baseline-Trials fehlen:
 
-  * [Setzt attribute \= none, value \= none](http://SetAnalyzer.py)
+  * Setzt attribute \= none, value \= none
 
-  * [Wählt zufällig target\_image (links oder rechts)](http://SetAnalyzer.py)
+  * Wählt zufällig target\_image (links oder rechts)
 
-  * [Erstellt den cb\_index als z. B. baseline\_nature-urban\_L](http://SetAnalyzer.py)
+  * Erstellt den cb\_index als z. B. baseline\_nature-urban\_L
 
-* [Sonst:](http://SetAnalyzer.py)
+* Sonst:
 
-  * [Wählt zufällig eine Manipulationsart und \-ausprägung, außer das entsprechende Limit ist noch nicht erreicht](http://SetAnalyzer.py)
+  * Wählt zufällig eine Manipulationsart und \-ausprägung, außer das entsprechende Limit ist noch nicht erreicht
 
-  * [Wählt zufällig die Seite, auf der das manipulierte Bild liegt](http://SetAnalyzer.py)
+  * Wählt zufällig die Seite, auf der das manipulierte Bild liegt
 
-  * [Setzt attribute, value, target\_image, cb\_index entsprechend](http://SetAnalyzer.py)
+  * Setzt attribute, value, target\_image, cb\_index entsprechend
 
-[Der SetAnalyzer.py liefert Verteilungsanalysen über die subject\_sets.](http://SetAnalyzer.py)
+Der SetAnalyzer.py liefert Verteilungsanalysen über die subject\_sets.
 
-| [attribute\_distribution](http://SetAnalyzer.py)  | [Häufigkeiten der verschiedenen Attribute (Manipulationen) insgesamt](http://SetAnalyzer.py) |
+| attribute\_distribution  | Häufigkeiten der verschiedenen Attribute (Manipulationen) insgesamt |
 | :---- | :---- |
-| [cb\_index\_usage](http://SetAnalyzer.py) | [Häufigkeit der verschiedenen cb\_indexes insgesamt](http://SetAnalyzer.py) |
-| [image\_usage](http://SetAnalyzer.py) | [Häufigkeit der verschiedenen images insgesamt](http://SetAnalyzer.py) |
-| [subject\_summary](http://SetAnalyzer.py) | [Häufigkeit der verschiedenen Attribute aufgeschlüsselt nach Probanden](http://SetAnalyzer.py) |
+| cb\_index\_usage | Häufigkeit der verschiedenen cb\_indexes insgesamt |
+| image\_usage | Häufigkeit der verschiedenen images insgesamt |
+| subject\_summary | Häufigkeit der verschiedenen Attribute aufgeschlüsselt nach Probanden |
 
