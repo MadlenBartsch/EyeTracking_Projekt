@@ -67,7 +67,7 @@ Für jeden Probanden (normal und gespiegelt):
   * Setzt attribute, value, target\_image, cb\_index entsprechend
 
 ### **SetAnalyzer.py**
-Der SetAnalyzer.py liefert Verteilungsanalysen über die subject\_sets.
+Der SetAnalyzer.py liefert Verteilungsanalysen über die subject\_sets in dem Ordner distribution_analysis.
 
 | attribute\_distribution  | Häufigkeiten der verschiedenen Attribute (Manipulationen) insgesamt |
 | :---- | :---- |
