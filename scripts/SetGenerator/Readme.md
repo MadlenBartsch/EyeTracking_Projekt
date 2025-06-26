@@ -1,3 +1,5 @@
+#### **TrialSetGenerator.py**
+
 ### **Configuration**
 
 * Setzt einen Zufalls-Seed für Reproduzierbarkeit.
@@ -64,6 +66,7 @@ Für jeden Probanden (normal und gespiegelt):
 
   * Setzt attribute, value, target\_image, cb\_index entsprechend
 
+#### **SetAnalyzer.py**
 Der SetAnalyzer.py liefert Verteilungsanalysen über die subject\_sets.
 
 | attribute\_distribution  | Häufigkeiten der verschiedenen Attribute (Manipulationen) insgesamt |
