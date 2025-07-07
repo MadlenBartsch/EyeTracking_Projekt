@@ -138,6 +138,13 @@ os.makedirs(output_folder, exist_ok=True)
 
 for subj, trials in enumerate(subject_trials):
     if trials:
+        # Trials Mischen, damit Baselines nicht nur am Anfang sind
+        random.shuffle(trials)
+
+        # trial_number neu setzen
+        for idx, trial in enumerate(trials):
+            trial['trial_number'] = idx + 1
+
         df = pd.DataFrame(trials)[[
             'trial_number', 'img_left', 'img_right', 'attribute',
             'value', 'target_image', 'cb_index'
@@ -145,5 +152,4 @@ for subj, trials in enumerate(subject_trials):
         df.to_csv(f"{output_folder}/subject_{subj + 1:02d}.csv", index=False)
     else:
         print(f"Achtung: Keine gültigen Trials für subject_{subj + 1:02d}")
-
 
