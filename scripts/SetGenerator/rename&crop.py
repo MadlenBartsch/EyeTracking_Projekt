@@ -23,7 +23,7 @@ def rename_and_crop_images(folder_path):
 
                 img_resized = img_cropped.resize((512, 512), Image.Resampling.LANCZOS)
 
-                new_file_name = f"{folder_name}_{idx:03}.png"
+                new_file_name = f"{folder_name}_{idx:03}.jpg"
                 new_file_path = os.path.join(folder_path, new_file_name)
                 img_resized.save(new_file_path)
 
